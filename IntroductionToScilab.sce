@@ -103,11 +103,16 @@ surf(x,y,a)
 
 // grid of points in a rectangular region
 // with a specified spacing
+[a,b] = meshgrid(-2: 0.6 : 1.8, -2:0.4:1.6)
+disp(a); size(a)
+disp(b); size(a)
+z = a.^2 - b.^2; mesh(a, b, z); surf(a, b, z)
 
 
-
-
-
+a(:,2)
+plot(y,a(:,2))
+plot(x,a(1,:))
+plot(x,a(3,:))
 
 
 
