@@ -88,14 +88,21 @@ plot(cos(2*%pi*t), sin(2*%pi*t))
 x = 0:0.01 : 10; plot(x,exp(-x),x, sin(x))
 
 
+// 3D plotting
+a = [1,2,3,8,8; 4,7,5,5,5; 3,4,9,6,6] 
+//  trasparent mesh surface
+mesh(a)
+// shaded and opaque mesh surface
+surf(a)
+
+// surf on coordinates x and y
+x = 0:0.5:2
+y = 0:0.5:1
+surf(x,y,a)
 
 
-
-
-
-
-
-
+// grid of points in a rectangular region
+// with a specified spacing
 
 
 
